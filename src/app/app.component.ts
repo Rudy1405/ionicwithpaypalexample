@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MenuController, Nav, Platform } from 'ionic-angular';
 import { ComponentsListPage } from '../pages/components/list/components.list.page';
 import { GoogleMapsPage } from '../pages/google-maps/google-maps.page';
+import { PayPalPage } from '../pages/paypal/paypal.page';
 
 import { HomePage } from '../pages/home/home.page';
 import { SlideBoxPage } from '../pages/slide-box/slide-box.page';
@@ -31,7 +32,9 @@ export class MyApp {
 			{ title: 'Wordpress', component: WordpressListPage, icon: 'logo-wordpress' },
 			{ title: 'Slides', component: SlideBoxPage, icon: 'swap' },
 			{ title: 'Google maps', component: GoogleMapsPage, icon: 'map' },
+			{ title: 'PayPal', component: PayPalPage, icon: 'cash' }, 
 			{ title: 'Components', component: ComponentsListPage, icon: 'grid' }
+			
 		];
 
 		this.rootPage = HomePage;

@@ -5,9 +5,10 @@ import { CallService } from '../../services/call.service';
 import { HomePage } from './home.page';
 import { InAppBrowserService } from '../../services/in-app-browser.service';
 import { MapsService } from '../../services/maps.service';
+import { PayPalModule } from '../paypal/paypal.module';
 
 @NgModule({
-	imports: [IonicModule],
+	imports: [IonicModule, PayPalModule],
 	declarations: [HomePage],
 	entryComponents: [HomePage],
 	providers: [

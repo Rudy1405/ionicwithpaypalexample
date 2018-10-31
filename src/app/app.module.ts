@@ -12,10 +12,13 @@ import { HomeModule } from '../pages/home/home.module';
 import { SlideBoxModule } from '../pages/slide-box/slide-box.module';
 import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { MyApp } from './app.component';
-
+import { PayPalPage } from '../pages/paypal/paypal.page';
+import { PayPal } from '@ionic-native/paypal';
+import { PayPalModule } from '../pages/paypal/paypal.module';
 @NgModule({
 	declarations: [
-		MyApp
+		MyApp 
+		
 	],
 	imports: [
 		BrowserModule,
@@ -27,15 +30,22 @@ import { MyApp } from './app.component';
 		GoogleMapsModule,
 		HomeModule,
 		SlideBoxModule,
-		WordpressModule
+		WordpressModule,
+		PayPalModule
+	
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
-		MyApp
-	],
+		MyApp,
+		
+	], 
 	providers: [
 		Config,
-		StatusBar
+		StatusBar,
+		PayPalModule,
+		PayPal
+
+		 
 	]
 })
 export class AppModule {
